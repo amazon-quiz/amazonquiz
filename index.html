@@ -7,6 +7,12 @@
   <meta name="description" content="Discover amazon quiz, amazon loot deals, flipkart loot deals today. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
   <meta name="keywords" content="loot deals, amazon-quiz, amazon loot deals, flipkart loot deals, tech deals india, indiadesire, loot offer, amazon quiz, Amazon deals, flipkart big billion days, amazon great indian festivals, gadgets deals, electronics, discounts" />
   <meta name="author" content="TechLootDeals" />
+    <!-- Canonical Tag for SEO -->
+  {% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url | absolute_url }}">
+  {% else %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% endif %}
 
   <!-- Open Graph -->
   <meta property="og:title" content="Amazon-Loot-Deals -- Best Loot Deals Of Amazon & Flipkart🔥" />
